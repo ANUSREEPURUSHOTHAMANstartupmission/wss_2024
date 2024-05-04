@@ -1,0 +1,97 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbar.astro";
+
+---
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ansonika">
+    <title>Women Startup Summit 2024 | Kerala Startup Mission</title>
+    
+    <!-- Favicons-->
+    <link rel=" icon" href="/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="/favicon.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="/favicon.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="/favicon.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="/favicon.png">
+
+    <!-- GOOGLE WEB FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+	<link href="/css/vendors.min.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="datepicker_mobile_full"> 
+
+    <div id="preloader" class="flex justify-center items-center h-screen fixed top-0 left-0 w-full bg-white z-50">
+      <!--?xml version="1.0" encoding="UTF-8"?-->
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1372.95 225.86" style="">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: none;
+          stroke: #222221;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-width: .9px;
+        }
+      </style>
+    </defs>
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-1 rDvkWjSC_0" d="M.45,197.9c36.25-14.44,93.42-32.42,164-33.17,100.78-1.06,149.19,33.88,247,47,46.13,6.19,92.06,6.03,138.73.15,20.43-2.57,41-6.24,61.79-10.95,4.77-1.08,24.77-6.98,31.49-9.97,11.01-4.9,22.67-10.86,25.03-12.56,2.68-1.93,5.38-3.87,7.75-6.17,1.95-1.89,3.66-4.01,5.28-6.19,5.57-7.48,10.2-15.96,11.4-25.21.76-5.91.1-11.91.21-17.87.11-5.96,1.12-12.19,4.73-16.93.81-1.06,2.01-2.12,3.31-1.82,1.43.34,1.97,2.08,2.03,3.55.14,3.41-.94,6.76-2.23,9.92-2.74,6.71-7.09,13.52-14,15.72-8.23,2.62-14.98-2.56-20.04-8.36-5.44-6.23-11.88-12.37-20.04-14.68-9.75-2.75-21.09-1.67-26.46,8.03-2.68,4.84-2.81,10.87-.92,16.06s5.66,9.59,10.16,12.8c6.95,4.95,15.76,7.22,24.23,6.22,4.54-.53,9.15-2.08,12.33-5.36s4.56-8.56,2.4-12.59c-1.01-1.89-2.66-3.34-4.34-4.66-2.21-1.73-4.58-3.35-7.28-4.12-4.09-1.16-8.94,0-11.53,3.37-2.6,3.37-2.24,8.86,1.18,11.39,3.42,2.53,9.28.73,10.18-3.43.8-3.69-2.04-7.12-4.93-9.55-4.16-3.49-9.13-6.37-14.55-6.64-5.42-.28-11.25,2.65-13.02,7.78-1.05,3.03-.09,7.1,2.95,8.1,2.39.79,4.91-.59,7.05-1.92,3.33-2.07,6.7-4.17,9.41-7.01,6.55-6.85,8.28-17.87,4.15-26.4-1.35-2.79-3.24-5.29-5.05-7.82-5.15-7.22-9.8-15.31-10.19-24.17-.45-10.13,3.76-22.37,15.09-24.11,1.95-.3,4.04-.22,5.75.77,2.48,1.44,3.6,4.84,2.46,7.47-1.14,2.63-4.38,4.14-7.13,3.31-2.99-.9-4.77-3.94-5.81-6.88-2.78-7.78-2.35-16.82,1.92-23.89,4.26-7.07,12.53-11.78,20.75-11.03,1.74.16,3.5.56,4.94,1.53,1.92,1.29,4.01,4.93,3.07,7.27-.86,2.15-3.95,2.69-5.9,1.45-1.95-1.24-2.84-3.68-2.94-5.98-.28-6.56,4.72-12.25,10.31-15.68,3.67-2.26,7.8-3.9,12.09-4.22,4.3-.32,8.78.75,12.16,3.44,3.31-.73,8.27-1.34,14.02-.21,13.36,2.62,20.8,12.62,22.7,15.35,10.15,8.25,13.95,14.54,15.51,18.88,1.12,3.1,2.5,5.97,4.96,8.25,1.95,1.81,4.27,3.17,6.71,4.21,3.64,1.56,7.35,1.55,11.1,2.5.51.13,1.02.3,1.43.61.93.71,1.19,2.05.88,3.17-.31,1.12-1.09,2.05-1.96,2.83-.86.78-1.83,1.45-2.65,2.28-2.21,2.23.87,6.06,2.86,7.3.7.44,1.48.8,1.99,1.44.39.49.6,1.11.7,1.73.33,2.18-.09,4.35-2.34,5.2-.85.32-1.76.48-2.6.82-.41.17-.79.38-1.16.62-1.13.73-2.09,1.7-3.13,2.55-1.03.84-2.16,1.83-3.58,1.45-.17-.04-.34-.11-.46-.24-.34-.38.24-.84.5-1.09,1.09-1.07,2.28-2.05,3.25-3.23,1.03-1.25,1.78-2.68,2.69-4.02.9-1.34,1.99-2.62,3.45-3.32.84-.41,1.93-.57,2.66.02.53.43.72,1.14.81,1.82.21,1.64-.15,3.49-1.44,4.53,1.13.25,2.17.91,2.87,1.84.48.64.81,1.4.85,2.2.04.8-.24,1.62-.81,2.18-.42.41-.97.65-1.52.84-2.86.94-5.98.37-8.99.58-1.23.08-2.45.3-3.68.21.17-.54.8-.75,1.35-.88,2.14-.5,4.33-.75,6.52-.74,1.61,0,3.26.16,4.74.8,1.13.49,2.11,1.29,2.84,2.27.79,1.07,1.41,2.26,1.96,3.46.54,1.17,1.19,2.34,1.51,3.59.06.21.1.43.14.65.21,1.25.1,2.53-.43,3.68-.13.28-.28.56-.45.82-1.53,2.33-3,4.44-5.45,5.91-1.15.69-2.4,1.21-3.65,1.69-4.9,1.88-9.68,3.09-14.81,4.1-4.83.95-9.83.94-14.77,1.17-4.07.19-8.2.38-12.24-.31-3.92-.67-7.18-2.47-10.43-4.7-3.65-2.51-6.87-5.59-10.24-8.47-4.76-4.07-9.92-7.8-15.62-10.36-.91-.41-1.84-.79-2.78-1.14,1.41,4.3,4.97,6.69,8.94,8.87,14.66,8.08,30.28,16.4,47.01,15.73,1.18-.05,3.17-.24,4.33-.05,2.63.44-.02,4.67-.95,6.61-2.62,5.46-4.28,11.66-5.85,17.53-2.15,7.98-4.09,16.13-3.99,24.4.11,8.77,2.74,19.38,10.28,24.68,8.45,5.94,17.88,10.47,27.81,13.31,23.68,9.58,64.69,23.58,116.66,26.83,122.7,7.69,181.08-52.36,304-57,37.72-1.42,96.74,1.79,171.05,30.17"></path>
+    </g>
+  <style data-made-with="vivus-instant">.rDvkWjSC_0{stroke-dasharray:2449 2451;stroke-dashoffset:2450;animation:rDvkWjSC_draw_0 4220ms ease-in 0ms infinite,rDvkWjSC_fade 4220ms linear 0ms infinite;}@keyframes rDvkWjSC_draw{100%{stroke-dashoffset:0;}}@keyframes rDvkWjSC_fade{0%{stroke-opacity:1;}99.5260663507109%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes rDvkWjSC_draw_0{4.739336492890995%{stroke-dashoffset: 2450}52.13270142180095%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+      </div>
+      
+      <div id="content" class="hidden">
+        <slot />
+
+
+      </div>
+      
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- /back to top -->
+
+<!-- COMMON SCRIPTS -->
+<script src="/js/common_scripts.js" is:inline ></script>
+<script src="/js/common_functions.js" is:inline ></script>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+    document.getElementById("preloader").classList.add("hidden");
+    document.getElementById("content").classList.remove("hidden");
+  }, 2400); 
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+
+
+<header class="reveal_header bg-white text-black" style="color: black;" >
+    <div class="container">
+        <div class="row align-items-center">
+             <div class="col-4">
+                    <a href="/" class="logo_normal"><img src="/img/ksumwss.svg" width="160" height="100" alt=""></a>
+                    <a href="/" class="logo_sticky"><img src="/img/ksumwss.svg" width="135" height="45" alt=""></a>
+            </div>
+            <div class="col-8">
+                <nav>
+                    <ul>
+                        
+                        <!-- <li class=" md:inline-block hidden"><a href="#speakers" class=" btn_scrollto text-[#EA7010] uppercase"><small>Speakers</small></a></li>
+
+                        <li class=" md:inline-block hidden"><a href="#agenda" class=" btn_scrollto text-[#EA7010] uppercase"><small>Agenda</small></a></li>
+                        <li class=" md:inline-block hidden"><a href="/downloads"  target="_blank" class=" btn_scrollto text-[#EA7010] uppercase"><small>Updates</small></a></li>
+
+                        <li class=" md:inline-block hidden"><a href="/shelovetech" target="_blank" class="  text-[#EA7010] uppercase"><small>She loves tech</small></a></li>
+                        <li class=" md:inline-block hidden"><a href="/wssexpo_2023" target="_blank" class="  text-[#EA7010] uppercase"><small>Startups Showcasing</small></a></li> -->
+                       
+                        <li class="inline-block "><a  onclick="openIframe('https://zfrmz.com/nIrcAxTM7ujwEbYGmPpj');" target="_blank"  class="btn_1 btn_scrollto bg-[#e74100] cursor-pointer ">Register Now</a></li>
+
+                        <li class=" md:inline-block hidden"><a href="https://zfrmz.com/bg3hVAExXEhH3S01nPd8" target="_blank"  class="btn_1 btn_scrollto bg-[#e74100] cursor-pointer ">Share your Thoughts</a></li>
+
+                        <li >
+                           <div class="hamburger_2 open_close_nav_panel"style="color: black;"  >
+                                <div class="hamburger__box" style="color: black;" >
+                                    <div class="hamburger__inner" style="color: black;" ></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div><!-- /container -->
+</header><!-- /Header -->
+
+<div class="nav_panel " >
+    <a href="#" class="closebt open_close_nav_panel" ><i class="bi bi-x"></i></a>
+    <div class="logo_panel"><img src="/img/wss2024.svg" width="135" height="45" alt=""></div>
+    <div class="sidebar-navigation">
+        <nav>
+            <ul class="level-1">
+                <li><a href="/">Home</a></li>
+
+
+                <li><a href="https://2022.womenstartupsummit.com/" target="_blank">Previous Edition</a></li>
+               
+                <li><a href="https://2022.womenstartupsummit.com/shelovestech2022/" target="_blank">SHE LOVES TECH 2023</a></li>
+
+               
+            </ul>
+            <div class="panel_footer">
+                <div class="phone_element"><a href="https://zfrmz.com/bg3hVAExXEhH3S01nPd8" target="_blank"  class=" cursor-pointer"><span>Share your Thoughts</span></a></div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+<script is:inline>
+
+	function openIframe() {
+		
+		popupContainer.classList.remove('hidden');
+	}
+	
+	function closeIframe() {
+		
+	
+		popupContainer.classList.add('hidden');
+	}
+</script>
+
+
+
+
+<script is:inline>
+    
+    function openIframe(link) {
+        var popupContainer = document.getElementById('popupContainer');
+        var iframe = document.getElementById('myIframe');
+        var preloader = document.getElementById('preloader');
+
+        iframe.src = link;
+        preloader.classList.remove('hidden'); 
+        popupContainer.classList.remove('hidden');
+        
+       
+        iframe.onload = function() {
+            preloader.classList.add('hidden');
+        };
+    }
+
+    function closeIframe() {
+        var popupContainer = document.getElementById('popupContainer');
+        var iframe = document.getElementById('myIframe');
+        var preloader = document.getElementById('preloader');
+
+        iframe.src = '';
+        preloader.classList.add('hidden'); 
+
+        popupContainer.classList.add('hidden');
+    }
+</script>
